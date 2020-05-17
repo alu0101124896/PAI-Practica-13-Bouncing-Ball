@@ -1,0 +1,73 @@
+/**
+ * @file www.css
+ * @author Sergio Tabares Hernández <alu0101124896@ull.edu.es>
+ * @since Spring 2020
+ * @summary University of La Laguna
+ * @summary Computer Science - Interactive Aplication Programing
+ * @description This is a css file for the www/index.html
+ */
+
+html {
+  text-align: center;
+  margin: 0;
+}
+
+body {
+  background-image:linear-gradient(#67c200, #9bcc4c, #f2ffc4);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 0;
+  height: 100vh;
+}
+
+h1 {
+  color: #183504;
+  font-size: 300%;
+}
+
+h2 {
+  color: #203f0a;
+  font-size: 200%;
+}
+
+h3 {
+  color: #407719;
+  font-size: 150%;
+}
+
+a {
+  color: #285800;
+  text-decoration: none;
+  font-size: 125%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  padding: 0.5%;
+}
+
+.header-item {
+  margin: 10px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+section {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #164400;
+  color: #d6ff76;
+  font-size: 150%;
+  margin: 0;
+}
