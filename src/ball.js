@@ -12,10 +12,13 @@
 /**
  * @description Class representing a ball
  *
+ * @param {number} [xCoord=0] - X coordinate of the ball
+ *
  * @class Ball
  */
 class Ball {
-  constructor() {
+  constructor(xCoord = 0) {
+    this.xCoord = xCoord;
   }
 }
 
