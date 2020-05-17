@@ -66,4 +66,18 @@ describe('Ball Class', () => {
       expectOnBallTest(MY_BALL.radius).to.be.equal(15);
     });
   });
+
+  describe('Ball methods', () => {
+    let myPoint;
+
+    beforeEach(() => {
+      myPoint = new BallOnBallTest(10, 10);
+    });
+
+    it('Move up', () => {
+      myPoint.move(0, -5);
+      expectOnBallTest(myPoint.xCoord).to.be.equal(10);
+      expectOnBallTest(myPoint.yCoord).to.be.equal(5);
+    });
+  });
 });
