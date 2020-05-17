@@ -50,4 +50,12 @@ describe('Ball Class', () => {
       expectOnBallTest(MY_BALL.radius).to.be.equal(10);
     });
   });
+
+  describe('Non default property values', () => {
+    const MY_BALL = new BallOnBallTest(5, 10, 15);
+
+    it('Modifies default xCoord correctly', () => {
+      expectOnBallTest(MY_BALL.xCoord).to.be.equal(5);
+    });
+  });
 });
