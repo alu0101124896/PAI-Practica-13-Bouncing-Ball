@@ -24,6 +24,20 @@ class Ball {
     this.yCoord = yCoord;
     this.radius = radius;
   }
+
+  /**
+   * @description Function that moves the ball the given displacement
+   *
+   * @param {number} xCoordDisp - number of pixels to be displaced on the X
+   *  coordinate
+   * @param {number} yCoordDisp - number of pixels to be displaced on the Y
+   *  coordinate
+   * @memberof Ball
+   */
+  move(xCoordDisp, yCoordDisp) {
+    this.xCoord += Number(xCoordDisp);
+    this.yCoord += Number(yCoordDisp);
+  }
 }
 
 /* istanbul ignore next */
