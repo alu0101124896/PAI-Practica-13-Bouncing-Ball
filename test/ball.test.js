@@ -27,5 +27,10 @@ describe('Ball Class', () => {
       expectOnBallTest(MY_BALL).to.have.property('xCoord');
       expectOnBallTest(MY_BALL.xCoord).to.be.a('number');
     });
+
+    it('Ball has a yCoord', () => {
+      expectOnBallTest(MY_BALL).to.have.property('yCoord');
+      expectOnBallTest(MY_BALL.yCoord).to.be.a('number');
+    });
   });
 });
