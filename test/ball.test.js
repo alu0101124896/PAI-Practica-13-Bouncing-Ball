@@ -79,5 +79,23 @@ describe('Ball Class', () => {
       expectOnBallTest(myPoint.xCoord).to.be.equal(10);
       expectOnBallTest(myPoint.yCoord).to.be.equal(5);
     });
+
+    it('Move down', () => {
+      myPoint.move(0, 5);
+      expectOnBallTest(myPoint.xCoord).to.be.equal(10);
+      expectOnBallTest(myPoint.yCoord).to.be.equal(15);
+    });
+
+    it('Move to the left', () => {
+      myPoint.move(5, 0);
+      expectOnBallTest(myPoint.xCoord).to.be.equal(15);
+      expectOnBallTest(myPoint.yCoord).to.be.equal(10);
+    });
+
+    it('Move to the right', () => {
+      myPoint.move(-5, 0);
+      expectOnBallTest(myPoint.xCoord).to.be.equal(5);
+      expectOnBallTest(myPoint.yCoord).to.be.equal(10);
+    });
   });
 });
