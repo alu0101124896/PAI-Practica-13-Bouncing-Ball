@@ -22,5 +22,10 @@ if (typeof require !== 'undefined') { // Execution in node
 describe('Ball Class', () => {
   describe('Default properties', () => {
     const MY_BALL = new BallOnBallTest();
+
+    it('Ball has a xCoord', () => {
+      expectOnBallTest(MY_BALL).to.have.property('xCoord');
+      expectOnBallTest(MY_BALL.xCoord).to.be.a('number');
+    });
   });
 });
