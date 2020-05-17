@@ -32,5 +32,10 @@ describe('Ball Class', () => {
       expectOnBallTest(MY_BALL).to.have.property('yCoord');
       expectOnBallTest(MY_BALL.yCoord).to.be.a('number');
     });
+
+    it('Ball has a radius', () => {
+      expectOnBallTest(MY_BALL).to.have.property('radius');
+      expectOnBallTest(MY_BALL.radius).to.be.a('number');
+    });
   });
 });
