@@ -45,5 +45,9 @@ describe('Ball Class', () => {
     it('Default yCoord is 0', () => {
       expectOnBallTest(MY_BALL.yCoord).to.be.equal(0);
     });
+
+    it('Default radius is 10', () => {
+      expectOnBallTest(MY_BALL.radius).to.be.equal(10);
+    });
   });
 });
