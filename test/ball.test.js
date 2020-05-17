@@ -37,5 +37,9 @@ describe('Ball Class', () => {
       expectOnBallTest(MY_BALL).to.have.property('radius');
       expectOnBallTest(MY_BALL.radius).to.be.a('number');
     });
+
+    it('Default xCoord is 0', () => {
+      expectOnBallTest(MY_BALL.xCoord).to.be.equal(0);
+    });
   });
 });
