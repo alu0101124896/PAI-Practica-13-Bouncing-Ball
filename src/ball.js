@@ -14,13 +14,15 @@
  *
  * @param {number} [xCoord=0] - X coordinate of the ball
  * @param {number} [yCoord=0] - Y coordinate of the ball
+ * @param {number} [radius=10] - Radius of the ball
  *
  * @class Ball
  */
 class Ball {
-  constructor(xCoord = 0, yCoord = 0) {
+  constructor(xCoord = 0, yCoord = 0, radius = 10) {
     this.xCoord = xCoord;
     this.yCoord = yCoord;
+    this.radius = radius;
   }
 }
 
