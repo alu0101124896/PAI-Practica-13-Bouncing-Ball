@@ -58,5 +58,8 @@ describe('Ball Class', () => {
       expectOnBallTest(MY_BALL.xCoord).to.be.equal(5);
     });
 
+    it('Modifies default yCoord correctly', () => {
+      expectOnBallTest(MY_BALL.yCoord).to.be.equal(10);
+    });
   });
 });
