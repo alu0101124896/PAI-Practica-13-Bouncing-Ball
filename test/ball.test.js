@@ -61,5 +61,9 @@ describe('Ball Class', () => {
     it('Modifies default yCoord correctly', () => {
       expectOnBallTest(MY_BALL.yCoord).to.be.equal(10);
     });
+
+    it('Modifies default radius correctly', () => {
+      expectOnBallTest(MY_BALL.radius).to.be.equal(15);
+    });
   });
 });
