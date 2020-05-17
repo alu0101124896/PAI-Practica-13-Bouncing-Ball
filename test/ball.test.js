@@ -41,5 +41,9 @@ describe('Ball Class', () => {
     it('Default xCoord is 0', () => {
       expectOnBallTest(MY_BALL.xCoord).to.be.equal(0);
     });
+
+    it('Default yCoord is 0', () => {
+      expectOnBallTest(MY_BALL.yCoord).to.be.equal(0);
+    });
   });
 });
