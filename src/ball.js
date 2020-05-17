@@ -13,12 +13,14 @@
  * @description Class representing a ball
  *
  * @param {number} [xCoord=0] - X coordinate of the ball
+ * @param {number} [yCoord=0] - Y coordinate of the ball
  *
  * @class Ball
  */
 class Ball {
-  constructor(xCoord = 0) {
+  constructor(xCoord = 0, yCoord = 0) {
     this.xCoord = xCoord;
+    this.yCoord = yCoord;
   }
 }
 
