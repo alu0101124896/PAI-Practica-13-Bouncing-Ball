@@ -30,6 +30,8 @@ class BouncingBall {
     this.CANVAS.height = window.innerHeight - 175;
     this.movingBall = new BallOnBouncingBall(this.CANVAS.width / 2,
       this.CANVAS.height / 2);
+    this.xCoordDisp = 0;
+    this.yCoordDisp = 0;
     this.draw();
     this.startMoving();
   }
