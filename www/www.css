@@ -20,7 +20,6 @@ body {
   align-items: stretch;
   justify-content: space-around;
   margin: 0;
-  height: 100vh;
 }
 
 h1 {
@@ -48,6 +47,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 95%;
   margin: auto;
   padding: 0.5%;
@@ -57,11 +57,11 @@ header {
   margin: 10px;
 }
 
-.spacer {
-  flex-grow: 1;
+.button {
+  margin: 10px;
 }
 
-section {
+.spacer {
   flex-grow: 1;
 }
 
