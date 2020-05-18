@@ -68,34 +68,34 @@ describe('Ball Class', () => {
   });
 
   describe('Ball methods', () => {
-    let myPoint;
+    let myBall;
 
     beforeEach(() => {
-      myPoint = new BallOnBallTest(10, 10);
+      myBall = new BallOnBallTest(10, 10);
     });
 
     it('Move up', () => {
-      myPoint.move(0, -5);
-      expectOnBallTest(myPoint.xCoord).to.be.equal(10);
-      expectOnBallTest(myPoint.yCoord).to.be.equal(5);
+      myBall.move(0, -5);
+      expectOnBallTest(myBall.xCoord).to.be.equal(10);
+      expectOnBallTest(myBall.yCoord).to.be.equal(5);
     });
 
     it('Move down', () => {
-      myPoint.move(0, 5);
-      expectOnBallTest(myPoint.xCoord).to.be.equal(10);
-      expectOnBallTest(myPoint.yCoord).to.be.equal(15);
+      myBall.move(0, 5);
+      expectOnBallTest(myBall.xCoord).to.be.equal(10);
+      expectOnBallTest(myBall.yCoord).to.be.equal(15);
     });
 
     it('Move to the left', () => {
-      myPoint.move(5, 0);
-      expectOnBallTest(myPoint.xCoord).to.be.equal(15);
-      expectOnBallTest(myPoint.yCoord).to.be.equal(10);
+      myBall.move(5, 0);
+      expectOnBallTest(myBall.xCoord).to.be.equal(15);
+      expectOnBallTest(myBall.yCoord).to.be.equal(10);
     });
 
     it('Move to the right', () => {
-      myPoint.move(-5, 0);
-      expectOnBallTest(myPoint.xCoord).to.be.equal(5);
-      expectOnBallTest(myPoint.yCoord).to.be.equal(10);
+      myBall.move(-5, 0);
+      expectOnBallTest(myBall.xCoord).to.be.equal(5);
+      expectOnBallTest(myBall.yCoord).to.be.equal(10);
     });
   });
 });
