@@ -13,7 +13,7 @@ let expectOnBallTest;
 let BallOnBallTest;
 if (typeof require !== 'undefined') { // Execution in node
   expectOnBallTest = require('chai').expect;
-  BallOnBallTest = require('../src/ball.js').Ball;
+  BallOnBallTest = require('../src/bouncing-ball/ball.js').Ball;
 } else { // Execution in browser
   expectOnBallTest = expect;
   BallOnBallTest = Ball;

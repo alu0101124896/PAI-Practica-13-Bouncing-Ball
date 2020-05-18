@@ -13,7 +13,8 @@ let expectOnBouncingBallTest;
 let BouncingBallOnBouncingBallTest;
 if (typeof require !== 'undefined') { // Execution in node
   expectOnBouncingBallTest = require('chai').expect;
-  BouncingBallOnBouncingBallTest = require('../src/bouncing-ball.js').BouncingBall;
+  BouncingBallOnBouncingBallTest =
+    require('../src/bouncing-ball/bouncing-ball.js').BouncingBall;
 } else { // Execution in browser
   expectOnBouncingBallTest = expect;
   BouncingBallOnBouncingBallTest = BouncingBall;

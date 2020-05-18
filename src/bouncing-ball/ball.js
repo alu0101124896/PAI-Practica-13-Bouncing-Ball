@@ -9,7 +9,8 @@
 
 "use strict";
 
-const GREEN_BALL = 'forestGreen';
+const RANDOM_COLOR_BALL = 'rgb(' + Math.floor(Math.random() * 255) + ',' +
+  Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')';
 
 /**
  * @description Class representing a ball
@@ -30,9 +31,9 @@ class Ball {
   /**
    * @description Function that moves the ball the given displacement
    *
-   * @param {number} xCoordDisp - number of pixels to be displaced on the X
+   * @param {number} xCoordDisp - Number of pixels to be displaced on the X
    *  coordinate
-   * @param {number} yCoordDisp - number of pixels to be displaced on the Y
+   * @param {number} yCoordDisp - Number of pixels to be displaced on the Y
    *  coordinate
    * @memberof Ball
    */
@@ -50,7 +51,7 @@ class Ball {
    */
   draw(CONTEXT) {
     CONTEXT.beginPath();
-    CONTEXT.fillStyle = GREEN_BALL;
+    CONTEXT.fillStyle = RANDOM_COLOR_BALL;
     CONTEXT.ellipse(this.xCoord, this.yCoord, this.radius, this.radius, 0, 0, Math.PI * 2);
     CONTEXT.fill();
   }
