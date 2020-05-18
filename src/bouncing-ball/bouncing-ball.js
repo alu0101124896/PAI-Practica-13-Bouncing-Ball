@@ -36,14 +36,14 @@ class BouncingBall {
     this.startMoving();
   }
 
-  // /**
-  //  * @description Function that stops the execution the given amount of time
-  //  *
-  //  * @param {number} msToWait - Number of miniseconds to stop the execution
-  //  */
-  // sleep(msToWait) {
-  //   return new Promise(resolve => setTimeout(resolve, msToWait));
-  // }
+  /**
+   * @description Function that stops the execution the given amount of time
+   *
+   * @param {number} msToWait - Number of miniseconds to stop the execution
+   */
+  sleep(msToWait) {
+    return new Promise(resolve => setTimeout(resolve, msToWait));
+  }
 
   /**
    * @description Function that controls the bouncing boundaries of the ball
@@ -72,7 +72,7 @@ class BouncingBall {
    *
    * @memberof BouncingBall
    */
-  /*async*/ startMoving() {
+  async startMoving() {
     let xCoordDisp = Math.random() * 5;
     let yCoordDisp = Math.random() * 5;
     let xDirection = Math.floor(Math.random() * 2);
@@ -103,7 +103,7 @@ class BouncingBall {
     }
     while (true) {
       this.moveBall();
-      // await this.sleep(10);
+      await this.sleep(10);
     }
   }
 
