@@ -32,6 +32,16 @@ class BouncingBall {
       this.CANVAS.height / 2);
     this.draw();
   }
+
+  /**
+   * @description Function that resets the canvas and draws the bouncing ball
+   *
+   * @memberof BouncingBall
+   */
+  draw() {
+    this.CONTEXT.clearRect(0, 0, this.CANVAS.width, this.CANVAS.height);
+    this.movingBall.draw(this.CONTEXT);
+  }
 }
 
 let bouncingBall;

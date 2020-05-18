@@ -9,6 +9,8 @@
 
 "use strict";
 
+const GREEN_BALL = 'forestGreen';
+
 /**
  * @description Class representing a ball
  *
@@ -37,6 +39,20 @@ class Ball {
   move(xCoordDisp, yCoordDisp) {
     this.xCoord += Number(xCoordDisp);
     this.yCoord += Number(yCoordDisp);
+  }
+
+  /* istanbul ignore next */
+  /**
+   * @description Function that draws the ball
+   *
+   * @param {*} CONTEXT - Canvas context
+   * @memberof Ball
+   */
+  draw(CONTEXT) {
+    CONTEXT.beginPath();
+    CONTEXT.fillStyle = GREEN_BALL;
+    CONTEXT.ellipse(this.xCoord, this.yCoord, this.radius, this.radius, 0, 0, Math.PI * 2);
+    CONTEXT.fill();
   }
 }
 
