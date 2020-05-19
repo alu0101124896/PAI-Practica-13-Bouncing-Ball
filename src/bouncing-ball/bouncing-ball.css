@@ -29,28 +29,31 @@ h2 {
 .main-flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  /* height: 80vh; */
 }
 
 canvas {
   background: #e5ffcc;
   border: 3px solid black;
-  margin: 5%;
-  display: block;
+  margin: 0 2%;
 }
 
 .columns {
+  margin: 0%;
+
+}
+
+.buttons {
   background-color: #ffffff;
   box-shadow: 0px 1px 1px 1px #aaaaaa;
   border-radius: 2%;
-  margin: 2% 5%;
+  margin: 2%;
   padding: 2%;
 }
 
 .button {
-  margin: 1%;
+  margin: 2% 0.5%;
 }
 
 /* #info {

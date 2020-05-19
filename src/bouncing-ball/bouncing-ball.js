@@ -26,8 +26,8 @@ class BouncingBall {
   constructor() {
     this.CANVAS = document.getElementById("canvas");
     this.CONTEXT = this.CANVAS.getContext("2d");
-    this.CANVAS.width = window.innerWidth - 150;
-    this.CANVAS.height = window.innerHeight - 175;
+    this.CANVAS.width = window.innerWidth * 2 / 3;
+    this.CANVAS.height = window.innerHeight - 150;
     this.movingBall = new BallOnBouncingBall(this.CANVAS.width / 2,
       this.CANVAS.height / 2);
     this.xCoordDisp = 0;
